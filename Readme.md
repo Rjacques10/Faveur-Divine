@@ -21,8 +21,8 @@
 
 ```
 / (racine)
-├── index(fr).html        # Version française
-├── index(en).html           # Version anglaise
+├── en.html        # Version française
+├── index.html           # Version anglaise
 ├── /image           # Images des plats
 └── README.md         # Ce fichier
 ```
