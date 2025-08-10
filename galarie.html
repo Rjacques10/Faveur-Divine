@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Galarie Faveur Divine</title>
+</head>
+<body>
+    <header>
+        <h1>Galerie Faveur Divine</h1>
+        <p>Découvrez nos délicieux plats en images et vidéos !</p>
+        <a href="index.html" class="return-button">← Retour à l'accueil</a>
+    </header>
+
+    <div class="filters">
+        <button onclick="filterGallery('all')">Tous</button>
+        <button onclick="filterGallery('grillades')">Grillades</button>
+        <button onclick="filterGallery('pancakes')">Pancakes</button>
+        <button onclick="filterGallery('crepes')">Crêpes</button>
+        <button onclick="filterGallery('flans')">Flans</button>
+        <button onclick="filterGallery('salades')">Salades</button>
+        <button onclick="filterGallery('pastel')">Pastel</button>
+        <button onclick="filterGallery('boissons')">Boissons</button>
+        <button onclick="filterGallery('accompagnements')">Accompagnements</button>
+        <button onclick="filterGallery('traiteur')">Traiteur</button>
+        <button onclick="filterGallery('autres')">Autres</button>
+    </div>
+
+    <div class="gallery">
+        <!-- Grillades -->
+        <div class="gallery-item show" data-category="grillades"><img src="image/grillades1.jpg" alt="grillade1"></div>
+        <div class="gallery-item show" data-category="grillades"><img src="image/grillades2.jpg" alt="grillade2"></div>
+        <div class="gallery-item show" data-category="grillades"><img src="image/grillades3.jpg" alt="grillade3"></div>
+        <div class="gallery-item show" data-category="grillades"><img src="image/grillades4.jpg" alt="grillade4"></div>
+        <div class="gallery-item show" data-category="grillades"><img src="image/grillades5.jpg" alt="grillade5"></div>
+
+        <!-- Pancakes -->
+        <div class="gallery-item show" data-category="pancakes"><img src="image/pancakes1.jpg" alt="pancake1"></div>
+
+        <!-- Crêpes -->
+        <div class="gallery-item show" data-category="crepes"><img src="image/crepes1.jpg" alt="crepe1"></div>
+        <div class="gallery-item show" data-category="crepes"><img src="image/crepes2.jpg" alt="crepe2"></div>
+
+        <!-- Flans -->
+
+        <!-- boissons -->
+
+        <!-- salades -->
+        <div class="gallery-item show" data-category="salades"><img src="image/salades1.jpg" alt="salade1"></div>
+
+        <!-- accompagnement -->
+        
+        <!-- Traiteur -->
+        <div class="gallery-item show" data-category="traiteur"><img src="image/traiteur1.jpg" alt="traiteur1"></div>
+        <div class="gallery-item show" data-category="traiteur"><img src="image/traiteur2.jpg" alt="traiteur2"></div>
+        <div class="gallery-item show" data-category="traiteur"><img src="image/traiteu3.jpg" alt="traiteur3"></div>
+
+        <!-- Autres -->
+        <div class="gallery-item show" data-category="autres"><img src="image/autres1.jpg" alt="autres1"></div>
+        <div class="gallery-item show" data-category="autres"><img src="image/autres2.jpg" alt="autres2"></div>
+        <div class="gallery-item show" data-category="autres"><img src="image/autres3.jpg" alt="autres3"></div>
+        <div class="gallery-item show" data-category="autres"><img src="image/autres4.jpg" alt="autres4"></div>
+        <div class="gallery-item show" data-category="autres"><img src="image/autres5.jpg" alt="autres5"></div>
+
+        <!-- patel -->
+
+        <!-- Traiteur vidéos -->
+        <div class="gallery-item show" data-category="traiteur"><video src="video/traiteur4.mp4" controls></video></div>
+
+        <!-- crepes vidéos -->
+        <div class="gallery-item show" data-category="crepes"><video src="video/crepes3.mp4" controls></video></div>
+    </div>
+
+    <footer>
+    <div class="cta">
+        <a href="index.html" class="return-button">← Retour à l'accueil</a>
+    </div>
+        <p>&copy; 2025 Faveur Divine. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

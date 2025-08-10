@@ -6,6 +6,8 @@ body{
 
 h1{
     color: #facc15;
+    margin: 0;
+    font-size: 2em;
 }
 
 html {
@@ -43,6 +45,15 @@ nav a {
 
 section{
     padding: 20px;
+    margin: 30px 5%;
+}
+
+section h2 {
+    border-left: 5px solid #fbbf24;
+    padding-left: 10px;
+    font-size: 1.6em;
+    color: #fbbf24;
+    margin-bottom: 15px;
 }
 
 h2{
@@ -67,6 +78,7 @@ footer{
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     text-align: center;
+    margin-top: 30px;
 }
 
 .cta{
@@ -74,14 +86,17 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    text-align: center;
+    margin: 30px;
 }
 
 .cta a {
-    padding: 10px;
+    padding: 12px 25px;
     background: #f97316;
+    background-color: #cc9933;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     text-align: center;
 }
 
@@ -102,6 +117,24 @@ img.menu-img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.return-button {
+    display: inline-block;
+    margin: 15px auto;
+    background-color: #cc9933;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.return-button:hover {
+    background-color: #b37820;
+    color: white;
+    background: #ea580c;
+}
+
 .lang-buttons {
     position: fixed;
     top: 10px;
@@ -117,4 +150,77 @@ img.menu-img {
     font-size: 18px;
     margin: 0 5px;
 }
+
+.filters {
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    }
+
+    .filters button {
+    margin: 5px;
+    background-color: #cc9933;
+    border: none;
+    color: #b45309;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    }
+
+    .filters button:hover {
+    background-color: #b37820;
+    color: white;
+    }
+
+    @media (max-width: 600px) {
+    header h1 {
+    font-size: 1.5em;
+    }
+    .filters button {
+    padding: 8px 12px;
+    font-size: 0.9em;
+    }
+    }
+
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    }
+
+    .gallery-item:hover{
+    transform: scale(1.03);
+    }
+
+    .gallery-item img,
+    .gallery-item video {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    height: 220px;
+    }
+
+    .gallery-item{
+    border: 1px solid #f0e68c;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    }
+
+    .item[data-category] {
+    display: none;
+    }
+
+    .item .show {
+    display: block;
+    }
+
 
